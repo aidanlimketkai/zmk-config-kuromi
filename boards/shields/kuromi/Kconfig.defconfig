@@ -1,0 +1,16 @@
+if SHIELD_KUROMI_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "kuromi"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_KUROMI_LEFT
+
+if SHIELD_KUROMI_LEFT || SHIELD_KUROMI_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_KUROMI_LEFT || SHIELD_KUROMI_RIGHT
